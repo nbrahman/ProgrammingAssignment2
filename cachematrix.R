@@ -66,7 +66,7 @@ cacheSolve <- function(x, ...)
             message("getting cached data")
             return(m)
         }
-        m <- solve(data)
+        m <- solve(data, ...)
         x$setInverse(m)
         m
     }
